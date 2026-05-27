@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayush Bhajman Patra — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ======= CURSOR ======= -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>ABP<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#education" class="nav-link" data-section="education">Education</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#internship" class="nav-link" data-section="internship">Internship</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀️</span>
+        <span class="theme-icon moon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= PAGE TRANSITION OVERLAY ======= -->
+  <div class="page-turn-overlay" id="pageTurnOverlay">
+    <div class="page-turn-inner"></div>
+  </div>
+
+  <!-- ======= MAIN CONTENT ======= -->
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="section active hero-section">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="line1">Ayush</span>
+          <span class="line2">Bhajman Patra</span>
+        </h1>
+        <div class="hero-roles">
+          <span class="role-item active-role" id="roleText">IT Graduate</span>
+        </div>
+        <p class="hero-desc">
+          Building full-stack web applications · Exploring cybersecurity · Networking enthusiast based in Mumbai.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://drive.google.com/file/d/1d9Zc_RyvBkWGqlVcDSMahC8XKxdFEYVS/view?usp=sharing" class="btn btn-primary"><i class="fas fa-download"></i> Resume</a>
+          <a href="#contact" class="btn btn-outline nav-trigger" data-section="contact"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <a href="https://github.com/Ayush-1804" class="btn btn-ghost" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ayush-patra-65176324a/" class="btn btn-ghost" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">7.87</span><span class="stat-label">CGPA</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Languages</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">ayush.js</span>
+          </div>
+          <pre class="code-body"><span class="c-keyword">const</span> <span class="c-var">ayush</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Ayush B. Patra"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Web Developer"</span>,
+  <span class="c-key">stack</span>: [<span class="c-str">"Node.js"</span>, <span class="c-str">"MongoDB"</span>,
+          <span class="c-str">"Express.js"</span>],
+  <span class="c-key">learning</span>: [<span class="c-str">"Cybersecurity"</span>,
+             <span class="c-str">"Ethical Hacking"</span>],
+  <span class="c-key">available</span>: <span class="c-bool">true</span>
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Motivated IT graduate with a strong foundation in <strong>web development</strong>, <strong>programming</strong>, <strong>databases</strong>, and <strong>computer networking</strong>.</p>
+          <p>Seeking an entry-level IT / Software role where I can apply my skills in HTML, CSS, JavaScript, Java, MongoDB, and GitHub while continuously enhancing my expertise in <em>networking</em>, <em>cybersecurity</em>, and <em>ethical hacking</em>.</p>
+          <p>Currently working as Shift In-Charge at The Binge Town, Thane — managing operations, technical setups, and teams under pressure.</p>
+        </div>
+        <div class="about-info-grid">
+          <div class="info-card"><i class="fas fa-map-marker-alt"></i><div><span>Location</span><strong>Mumbai, Maharashtra</strong></div></div>
+          <div class="info-card"><i class="fas fa-graduation-cap"></i><div><span>Degree</span><strong>BSc IT — 2025</strong></div></div>
+          <div class="info-card"><i class="fas fa-envelope"></i><div><span>Email</span><strong>Ayushpatra0892@gmail.com</strong></div></div>
+          <div class="info-card"><i class="fas fa-phone"></i><div><span>Phone</span><strong>+91 9619337010</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group glass-card" data-delay="0">
+          <div class="skill-group-header">
+            <i class="fas fa-code skill-icon"></i>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">HTML5</span>
+            <span class="stag">CSS3</span>
+            <span class="stag hot">JavaScript</span>
+            <span class="stag hot">Node.js</span>
+            <span class="stag hot">Express.js</span>
+            <span class="stag">ASP.NET</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card" data-delay="100">
+          <div class="skill-group-header">
+            <i class="fas fa-terminal skill-icon"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag hot">C</span>
+            <span class="stag hot">C++</span>
+            <span class="stag">Java</span>
+            <span class="stag">C#</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card" data-delay="200">
+          <div class="skill-group-header">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>Database &amp; Data</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag hot">MongoDB</span>
+            <span class="stag">Data Science</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card" data-delay="300">
+          <div class="skill-group-header">
+            <i class="fas fa-shield-alt skill-icon"></i>
+            <h3>Networking &amp; Security</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag hot">Networking</span>
+            <span class="stag learning">Cybersecurity ✦</span>
+            <span class="stag learning">Ethical Hacking ✦</span>
+          </div>
+          <small class="learning-note">✦ Currently Learning</small>
+        </div>
+
+        <div class="skill-group glass-card" data-delay="400">
+          <div class="skill-group-header">
+            <i class="fas fa-tools skill-icon"></i>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag hot">GitHub</span>
+            <span class="stag">Render</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card lang-card" data-delay="500">
+          <div class="skill-group-header">
+            <i class="fas fa-language skill-icon"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">English</span>
+            <span class="stag">Hindi</span>
+            <span class="stag">Odia</span>
+            <span class="stag muted">Marathi (Basic)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education-section">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-year">2022 – 2025</div>
+            <h3>BSc in Information Technology</h3>
+            <p class="tl-school"><i class="fas fa-university"></i> SIES College of Arts, Commerce &amp; Science, Sion</p>
+            <div class="tl-score"><span>CGPA</span><strong>7.87 / 10</strong></div>
+            <div class="tl-bar"><div class="tl-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="150">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-year">2020 – 2022</div>
+            <h3>HSC — Science with IT</h3>
+            <p class="tl-school"><i class="fas fa-university"></i> RJ Thakur College, Thane</p>
+            <div class="tl-score"><span>Percentage</span><strong>75%</strong></div>
+            <div class="tl-bar"><div class="tl-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-year">2018 – 2020</div>
+            <h3>SSC</h3>
+            <p class="tl-school"><i class="fas fa-university"></i> St. Xavier's English High School &amp; Jr College, Thane</p>
+            <div class="tl-score"><span>Percentage</span><strong>77.60%</strong></div>
+            <div class="tl-bar"><div class="tl-fill" style="width:77.6%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience-section">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-card glass-card">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Shift In-Charge</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> The Binge Town, Thane</p>
+          </div>
+          <div class="exp-badge">Jan 2026 – Present</div>
+        </div>
+        <ul class="exp-list">
+          <li><i class="fas fa-chevron-right"></i> Managed daily operations and coordinated team during shifts</li>
+          <li><i class="fas fa-chevron-right"></i> Handled customer issues and ensured smooth event execution</li>
+          <li><i class="fas fa-chevron-right"></i> Monitored technical setups — projector, sound, and lighting</li>
+          <li><i class="fas fa-chevron-right"></i> Resolved on-spot problems and worked efficiently under pressure</li>
+        </ul>
+        <div class="exp-tags">
+          <span>Leadership</span><span>Problem Solving</span><span>Operations</span><span>Technical Setup</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-delay="0">
+          <div class="project-accent accent-cyan"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="#" class="plink" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="plink" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-name">VittaVidya</h3>
+          <p class="project-desc">A beginner-friendly Forex education platform with videos, quizzes, live charts, AI chatbot, and group chat for interactive learning.</p>
+          <ul class="project-features">
+            <li>📊 Live Forex Charts</li>
+            <li>🤖 AI Chatbot Integration</li>
+            <li>💬 Group Chat</li>
+            <li>🔐 Secure Authentication</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-delay="150">
+          <div class="project-accent accent-orange"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-paw"></i></div>
+            <div class="project-links">
+              <a href="#" class="plink" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="plink" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-name">Petopia Care</h3>
+          <p class="project-desc">A full-featured pet-care e-commerce platform with species-specific product sections, cart management, user login, and checkout flow.</p>
+          <ul class="project-features">
+            <li>🐾 Species-specific Products</li>
+            <li>🛒 Cart Management</li>
+            <li>👤 User Authentication</li>
+            <li>💳 Checkout System</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERNSHIP -->
+    <section id="internship" class="section internship-section">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Internship &amp; Training</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="internship-grid">
+
+        <div class="intern-card glass-card" data-delay="0">
+          <div class="intern-icon"><i class="fas fa-brain"></i></div>
+          <div class="intern-body">
+            <h3>AI, ML &amp; Data Science Web Applications</h3>
+            <p class="intern-org"><i class="fas fa-building"></i> Gustovalley Technovations</p>
+            <p class="intern-date"><i class="fas fa-calendar"></i> May – June 2024</p>
+            <p class="intern-desc">Hands-on exposure to AI and ML concepts, data-driven web application development, and practical implementations of intelligent systems.</p>
+            <div class="intern-tags">
+              <span>Artificial Intelligence</span><span>Machine Learning</span><span>Data Science</span><span>Web Apps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intern-card glass-card" data-delay="200">
+          <div class="intern-icon ongoing-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="intern-body">
+            <h3>Diploma in Networking &amp; Cybersecurity</h3>
+            <p class="intern-org"><i class="fas fa-graduation-cap"></i> Ongoing Certification</p>
+            <p class="intern-date"><i class="fas fa-calendar"></i> Currently Enrolled</p>
+            <p class="intern-desc">Deep-diving into computer networking fundamentals, cybersecurity practices, threat analysis, and ethical hacking techniques.</p>
+            <div class="intern-tags">
+              <span>Networking</span><span>Cybersecurity</span><span>Ethical Hacking</span><span>Ongoing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT (React Mount Point) -->
+    <section id="contact" class="section contact-section">
+
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-layout">
+
+    <!-- Left Side -->
+    <div class="contact-info ">
+
+      <h3>Let's Connect</h3>
+
+      <p>
+        Open to opportunities, collaborations, internships, and IT roles.
+        Feel free to reach out — I'll get back to you soon.
+      </p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-detail-text">
+          <span>Email</span>
+          <strong>ayushpatra0892@gmail.com</strong>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="contact-detail-text">
+          <span>Phone</span>
+          <strong>+91 9619337010</strong>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <i class="fas fa-location-dot"></i>
+        </div>
+        <div class="contact-detail-text">
+          <span>Location</span>
+          <strong>Mumbai, Maharashtra</strong>
+        </div>
+      </div>
+
+      <div class="contact-socials">
+        <a href="https://github.com/Ayush-1804" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/ayush-patra-65176324a/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="contact-form-wrap glass-card">
+
+      <h3 class="form-title">Send Message</h3>
+
+<form id="contactForm">
+
+  <div class="form-group">
+    <label class="form-label">Full Name</label>
+    <input
+      type="text"
+      class="form-input"
+      id="name"
+      placeholder="Enter your name"
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-input"
+      id="email"
+      placeholder="Enter your email"
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Message</label>
+    <textarea
+      class="form-textarea"
+      id="message"
+      placeholder="Write your message..."
+    ></textarea>
+  </div>
+
+  <button class="form-submit" type="submit">
+    <i class="fas fa-paper-plane"></i>
+    Send Message
+  </button>
+
+</form>
+
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo-bracket">&lt;</span>ABP<span class="logo-bracket">/&gt;</span>
+      &nbsp;— Built with ♥ in Mumbai
+    </div>
+  </footer>
+
+  <!-- React + Babel CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Contact Component (inline JSX via Babel) -->
+  <script type="text/babel" src="components/Contact.jsx"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
